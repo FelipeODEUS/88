@@ -57,6 +57,7 @@ export default class CreatePost extends Component {
                 )
                 .set(postData)
                 .then(function(snapshot) { } );
+                this.props.setUpdateToTrue();
             this.props.navigation.navigate("Feed");
         } else {
             Alert.alert(
